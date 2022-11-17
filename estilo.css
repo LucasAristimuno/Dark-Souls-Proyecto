@@ -1,0 +1,606 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  
+	font-family: Arial, Helvetica, sans-serif;  
+}
+
+.body{
+
+	background: rgb(35, 32, 41);
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 20%;
+}
+
+.body-dos{
+
+	background-image: linear-gradient(rgb(70, 0, 128), rgb(35, 32, 41));
+	background-repeat: no-repeat;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top: 5%;
+}
+
+.body-tres{
+
+	background-image: url(videos/loop.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 1%;
+}
+
+
+
+/*Estilos para el encabezado*/
+.header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;left: 0;
+}
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+.container .btn-menu, .logo{
+	float: left;
+	line-height:100px;
+}
+.container .btn-menu label{
+	color: #fff;
+	font-size: 25px;
+	cursor: pointer;
+}
+.logo h1{
+	color: #fff;
+	font-weight: 400;
+	font-size: 22px;
+	margin-left: 10px;
+}
+.container .menu{
+	float: right;
+	line-height: 100px;
+}
+.container .menu a{
+	display: inline-block;
+	padding: 10px;
+	line-height: normal;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 15px;
+	margin-right: 5px;
+}
+.container .menu a:hover{
+	border-bottom: 2px solid rgb(199, 199, 199);
+	padding-bottom: 5px;
+}
+/*Fin de Estilos para el encabezado*/
+
+
+
+/*Barra Superior*/
+header{
+
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    background: rgb(70, 0, 128);
+    position: fixed;
+    top: 0;
+	left: 0;
+	z-index: 50;	
+}
+
+
+nav{
+
+    height: 50px;
+    line-height: 50px;
+}
+
+nav ul li{
+
+    float: center;
+    text-align: center;
+    margin: 10px;
+    line-height: 30px;
+}
+/*Fin de Barra Superior*/
+
+
+
+/* Botones */
+.contenedor-botones{
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+}
+
+.boton{
+
+    display: inline-flex;
+ 	align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 15%;
+	min-height: 30px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 100%;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px;
+	box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.2);
+}
+
+.boton.xxx::after {
+
+	content: "";
+	width: 1px;
+	height: 1px;
+	background: none;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transition: .6s ease-in-out all;
+	border-radius: 100%;
+	transform-origin: center;
+}
+
+.boton.xxx:hover::after {
+
+	transform: scale(10000);
+	background: rgb(110, 25, 229);
+}
+
+.boton.xxx:hover {
+
+	background: rgb(19, 4, 54);
+}
+
+.boton span{
+
+    z-index: 2;
+    transition: .3s ease all;
+}
+/* Fin Botones */
+
+
+
+ /*vista previa de las publicaciones*/
+.pre{
+	background-color: rgb(39, 36, 46);
+	margin-top: 5%;
+	text-align: center;
+	float: top;
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	margin: 5%;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.pre-dos{
+	background-color: rgba(81, 7, 255, 0);
+	margin: 5px;
+	text-align: center;
+	float: top;
+	margin-top: 5px;
+	width: 230px;
+	height: 175px;
+}
+
+.pre-tres{
+    text-align: center;
+    float: top;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.scroleables{
+	margin-top: 5%;
+	padding: 3%;
+	overflow-x: scroll;
+	border-radius: 10px  10px 0px 0px;
+	background: rgb(33, 30, 36);
+	height: auto;
+	width: 100%;
+}
+
+.scroleables-dos{
+	padding: 3%;
+	overflow-x: scroll;
+	border-radius: 10px  10px 0px 0px;
+	background: rgba(33, 30, 36, 0.315);
+	height: auto;
+	width: 100%;
+}
+
+.precios{
+	text-align: left;
+	color: rgb(98, 46, 156);
+	margin: 1%;
+	float: top;
+	line-height: 30px;
+	border-bottom: solid rgb(98, 91, 117) 2px;
+}
+
+.desc-dos{
+	text-align: left;
+	margin-left: 2%;
+	background-image: linear-gradient(rgb(18, 0, 85),rgb(51, 0, 109),rgb(97, 2, 250), rgb(128, 0, 0), rgb(128, 73, 0), rgb(255, 196, 0), rgb(253, 231, 106));
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	margin: 5px;
+	float: top;
+	line-height: 30px;
+	font-size: large;
+
+}
+
+.desc{
+	text-align: left;
+	margin-left: 2%;
+	color: rgb(255, 255, 255);
+	margin: 5px;
+	float: top;
+	line-height: 30px;
+	font-size: large;
+
+}
+ /*fin de vista Previa*/
+
+
+
+ /*cositas */
+.loop{
+	height: auto;
+	width: auto;
+
+}
+
+ .integrantes{
+	width: 100%;
+	padding: 1%;
+	border-bottom: solid white 3px;
+
+
+
+	
+ }
+
+ .dodys{
+	height: 100%;
+	width: 100%;
+	padding: 5%;
+
+ }
+
+ .dodysdos{
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+	padding: 5%;
+
+ }
+.deco{
+	width: 100%;
+	height: auto;
+
+}
+
+ .icoz{
+	width: 45px;
+	height: 45px;
+	margin: 10px;
+}
+
+.ima{
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+}
+
+
+.ico{
+	width: 20%;
+	height: 20%;
+	margin: 5px;
+
+}
+
+.icod{
+
+	width: 35px;
+	height: 35px;
+	margin: 5px;
+	margin-right: 100px;
+}
+
+.icom{
+
+	width: 35px;
+	height: 35px;
+	margin: 5px;
+	text-align: center;
+	align-items: center;
+	align-self: center;
+	margin: auto;
+}
+
+
+
+.icotxt{
+
+	color: black;
+  -webkit-text-fill-color: white; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  padding-bottom: 25px;
+}
+
+.portada{
+
+	height: 50px ;
+	width: 250px ;
+	background: rgba(0, 0, 0, 0.151);
+}
+
+.bordy{
+	width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+	margin-top: 20%;
+}
+
+
+ /*fin de cositas*/
+
+
+
+/*Estilos para el encabezado*/
+.header{
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	top: 0;left: 0;
+}
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+.container .btn-menu, .logo{
+	float: left;
+	line-height: 70px;
+}
+.container .btn-menu label{
+	color: #fff;
+	font-size: 25px;
+	cursor: pointer;
+}
+.logo h1{
+	color: rgb(255, 255, 255);
+	font-weight: 400;
+	font-size: 22px;
+	margin-left: 15px;
+}
+.container .menu{
+	float: right;
+	line-height: 100px;
+}
+.container .menu a{
+	display: inline-block;
+	padding: 15px;
+	line-height: normal;
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 15px;
+	margin-right: 5px;
+}
+.container .menu a:hover{
+	border-bottom: 2px solid #c7c7c7;
+	padding-bottom: 5px;
+}
+/*Fin de Estilos para el encabezado*/
+
+
+
+/*Articulos*/
+.art-dos{
+
+	width: 100%;
+	height: 100%;
+	background-image: url(imagenes/);
+	margin-bottom: 5%;
+	margin-top: 5%;
+	border-radius: 5px;
+	align-items: center;
+	text-align: center;
+
+}
+
+.art{
+
+	width: 100%;
+	height: 100%;
+	background: rgb(39, 36, 46);
+	margin-bottom: 5%;
+	margin-top: 5%;
+	border-radius: 5px;
+	align-items: center;
+	text-align: center;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 1%;
+
+}
+
+.ind{
+
+	border-top: 10px;
+	width: 95%;
+	height: 500px;
+	background: rgb(25, 0, 255);
+	margin: 3px;
+
+
+}
+
+.in{
+
+	border-top: 10px;
+	width: 80%;
+	height: 95%;
+	width: -20%;
+	height: -5%;
+	background: rgba(255, 0, 0, 0);
+	margin: 1%;
+	padding: 2%;
+
+
+}
+
+.ins{
+
+	border-top: 10px;
+	width: auto;
+	height: auto;
+	background: rgba(9, 255, 0, 0);
+	margin: 3%;
+	text-align: left;
+	padding: 5%;
+	color: #ffffff;
+	font-size: large;
+
+	
+
+}
+
+
+/*Fin Articulos*/
+
+
+
+ /*Contacto*/
+
+
+.contacto{
+
+	height: 100%;
+	width: 100%;
+	background: rgb(39, 36, 46);
+	min-height: 10px;
+	min-width: 10px;
+	margin-top: 5%;
+	padding: 5%;
+	
+}
+
+.primera{
+
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0);
+	min-height: 10px;
+	min-width: 10px;
+}
+
+.segunda{
+
+	border-bottom: solid rgb(98, 91, 117) 2px;
+}
+
+.campos{
+
+	border-radius: 5px;
+
+	border: solid rgba(0, 0, 0, 0) 2px;
+	padding-right: 1%;
+	padding-left: 1%;
+}
+
+.formulario{
+
+	height: 250px;
+	width: 100%;
+	border-radius: 10px;
+	border: solid rgba(0, 0, 0, 0) 2px;
+	padding: 1%;
+
+}
+
+.linea{
+	width: 100%;
+	margin: 1%;
+	border-bottom: solid rgb(255, 255, 255) 2px;
+	position: absolute;
+
+}
+
+
+/*Fin de Contacto*/
+
+
+
+/* Botones Dos */
+
+
+.boton.zzz::after {
+
+	content: "";
+	width: 1px;
+	height: 1px;
+	background: none;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transition: .9s ease-in-out all;
+	border-radius: 100%;
+	transform-origin: center;
+}
+
+.boton.zzz:hover::after {
+
+	transform: scale(10000);
+	background: rgb(223, 100, 0);
+	
+}
+
+.boton.zzz:hover {
+
+	background: rgb(255, 255, 255);
+	
+}
+
+.dos{
+
+
+height: 100%;
+width: 100%;
+
+
+}
+
+
+/* Fin Botones Dos */
